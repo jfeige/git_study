@@ -1,0 +1,35 @@
+1.创建版本库
+	git init
+2.从远程服务器上克隆到本地
+	git clone https://github.com/jfeige/lconfig.git
+3.本地关联到远程服务器
+	git remote add origin https://github.com/jfeige/lconfig.git
+4.从工作区提交到暂存区
+	git add <file> <file> ...
+5.从暂存区提交到版本区
+	git commit -m "注释"
+6.也可以直接从工作区提交到版本区
+	git commit -am "注释"
+7.查看当前工作区的状态
+	git status
+8.工作区与暂存区比较
+	git diff <file>
+9.工作区与HEAD(当前分支)比较
+	git diff HEAD <file>
+10.暂存区与HEAD比较
+	git diff --staged|--cached <file>
+11.当前分支的文件与指定分支的文件进行比较
+	git diff <branchName> <file>
+12.与某一次的提交进行比较
+	git diff <commitID> <file>
+13.查看历史提交记录
+	git log   or   git log --pretty=oneline 简化输出
+------------回退------------
+1.修改未提交到暂存区
+	git checkout <file>
+2.修改已提交到暂存区
+	git reset HEAD <file>   此时，改file回退到工作区状态,可以继续执行 git checkout <file> 回退到修改前版本
+3.修改已提交到版本区
+	git log --pretty=oneline 找到要回退的版本号commitID
+	git reset --hard <commitID> 回退到指定版本
+4. 
