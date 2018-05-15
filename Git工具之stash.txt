@@ -19,7 +19,8 @@ HEAD is now at 1b736cc add new file
      你现在可以方便的切换到其他分支工作。如果要查看现有的储存，可以执行 git stash list
 	stash@{0}: WIP on master: 1b736cc add new file
      
-     等到你其他分支工作完成后，再次切换到当前分支,想继续之前的工作，执行 git stash apply,会恢复到最近的一个储存，如果想应用更早的储存，可以通过名字指定:git stash apply stash@{2}	
+     等到你其他分支工作完成后，再次切换到当前分支,想继续之前的工作，执行 git stash apply,会恢复到最近的一个储存，
+如果想应用更早的储存，可以通过名字指定:git stash apply stash@{2}	
      
 
      如果想移除一个储存，执行命令 git stash drop <Name>
