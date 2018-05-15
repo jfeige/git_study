@@ -26,7 +26,7 @@
 ```	
 	$git stash list
 ```
-	git会列出当前的储存列表
+git会列出当前的储存列表
 ```
 	stash@{0}: WIP on master: 1b736cc add new file
 ```     
