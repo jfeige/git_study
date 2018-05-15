@@ -8,7 +8,7 @@
 	#   (use "git reset HEAD <file>..." to unstage)
 	#
 	#      modified:   readme.txt
-	#	
+	#
      这时，你想切换分支，但又不想提交，执行 git stash 命令
 	Saved working directory and index state WIP on master: 1b736cc add new file
 HEAD is now at 1b736cc add new file
