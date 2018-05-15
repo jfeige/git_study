@@ -37,8 +37,19 @@
 	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 	意思是本地版本与远程服务器上版本有冲突，你需要执行 git pull 把远程上的修改拉取到本地并合并或者 或者 
 git fetch 把远程上的修改拉取到本地
+	此时执行 git pull
+
+	remote: Counting objects: 3, done.
+	remote: Compressing objects: 100% (3/3), done.
+	remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (3/3), done.
+	From github.com:jfeige/git_study
+   	7e1b72a..d39ad09  master     -> origin/master
+	Auto-merging Git工具之stash.txt
+	CONFLICT (content): Merge conflict in Git工具之stash.txt
+	Automatic merge failed; fix conflicts and then commit the result.	
 	
-	
+	依次是在 Git工具之stash.txt 中有冲突,需要我们手动解决冲突，然后重新提交
 ------------回退------------
 1.修改未提交到暂存区
 	git checkout <file>
