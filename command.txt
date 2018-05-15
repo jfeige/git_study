@@ -1,7 +1,11 @@
 1.创建版本库
+```
 	git init
+```
 2.从远程服务器上克隆到本地
+```
 	git clone https://github.com/jfeige/lconfig.git
+```
 3.本地关联到远程服务器
 	git remote add origin https://github.com/jfeige/lconfig.git
 4.从工作区提交到暂存区
