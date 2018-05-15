@@ -27,6 +27,18 @@
 14.将修改从本地版本区提交到远程服务器
 	git push origin <branch>
 	git push -f 强制提交
+	在执行过程中,有可能会返回如下信息:
+
+	error: failed to push some refs to 'git@github.com:jfeige/git_study.git'
+	hint: Updates were rejected because the remote contains work that you do
+	hint: not have locally. This is usually caused by another repository pushing
+	hint: to the same ref. You may want to first integrate the remote changes
+	hint: (e.g., 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	意思是本地版本与远程服务器上版本有冲突，你需要执行 git pull 把远程上的修改拉取到本地并合并或者 或者 
+git fetch 把远程上的修改拉取到本地
+	
+	
 ------------回退------------
 1.修改未提交到暂存区
 	git checkout <file>
